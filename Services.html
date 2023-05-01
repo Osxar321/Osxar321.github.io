@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="uft-8">
+        <title>Barber Shop</title>
+        <link rel="StyleSheet" href="StyleSheet.css" >
+    </head>
+
+    <body>
+        <section>
+            <nav class="navbar">
+                <figure class="logo">
+                    <img src="images/Logo.png" alt="Barber Shop Logo" >
+                </figure>
+                <figure class="logo1">
+                    <img src="images/barbershop-name.jpg" alt="Baber Shop Name">
+                </figure >
+                <ul class="nav-links">
+                    <li class="nav-item"><a href="Barber Shop.html">Home</a></li>
+                    <li class="nav-item"><a href="Team-members.html">Team</a></li>
+                    <li class="nav-item"><a href="Services.html">Services</a></li>
+                </ul>
+            </nav>
+
+            <ul class="infobar">
+                <li class="info-item">Location: 123 Main St, Dallas, Texas</li>
+                <li class="info-item">Phone: (214)-357-9888</li>
+                <li class="info-item">Email:BarberShop118@gmail.com</li>
+                <li class="info-item">Availablity:
+                    <select name="drop1">
+                        <optgroup label="Available Days from 9am-5pm">
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                        </optgroup>"
+                        <optgroup label="Available Days from 11am-4pm">
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                    </select>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="Table-form">
+
+          
+            <table class="services-Table">
+                <caption>All our services offered</caption>
+                <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Service-info</th>
+                    <th>Duration</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+                <tr>
+                    <td>Shampoo</td>
+                    <td>One of our barbers/stylist will wash your hair with shampoo and conditioner</td>
+                    <td>5 minutes </td>
+                    <td>$5</td>
+                </tr>
+                <tr>
+                    <td>Beard Trim</td>
+                    <td>One of our barbers/stylist will trim your beard to your liking</td>
+                    <td>5-10 minutes</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Shave</td>
+                    <td>One of our barbers/stylist will shave your face with a straight razor</td>
+                    <td>10 minutes</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td>Shave and Beard Trim</td>
+                    <td>One of our barbers/stylist will shave your face with a straight razor and trim your beard</td>
+                    <td>15 minutes</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Shampoo and Haircut</td>
+                    <td>One of our barbers/stylist will wash your hair with shampoo and conditioner and give you a haircut</td>
+                    <td>20-30 minutes</td>
+                    <td>$25</td>
+                </tr>
+                <tr>
+                    <td>Shampoo, Haircut, and Beard Trim</td>
+                    <td>One of our barbers/stylist will wash your hair with shampoo and conditioner, give you a haircut, and trim your beard</td>
+                    <td>25-35 minutes</td>
+                    <td>$30</td>
+                </tr>
+                <tr>
+                    <td>Shampoo, Haircut, Beard Trim, and Shave</td>
+                    <td>One of our barbers/stylist will wash your hair with shampoo and conditioner, give you a haircut, trim your beard, and shave your face with a straight razor</td>
+                    <td>35-45 minutes</td>
+                    <td>$45</td>
+                </tr>
+            </table>             
+        </section>
+
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Book an Appointment</legend>
+                    
+                   <p class="personal-form">Please Enter your personal Information</p>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                 
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                 
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+                  <p class="service-form">Select your required service and a prefered Barber/Stylist</p>
+                    <label for="service">Service:</label>
+                    <select name="service" id="service" required>
+                        <option value="Shampoo">Shampoo</option>
+                        <option value="Beard Trim">Beard Trim</option>
+                        <option value="Shave">Shave</option>
+                        <option value="Shave and Beard Trim">Shave and Beard Trim</option>
+                        <option value="Shampoo and Haircut">Shampoo and Haircut</option>
+                        <option value="Shampoo, Haircut, and Beard Trim">Shampoo, Haircut, and Beard Trim</option>
+                        <option value="Shampoo, Haircut, Beard Trim, and Shave">Shampoo, Haircut, Beard Trim, and Shave</option>
+                    </select>
+                    
+                        <label for="team-member">Barber/Stylist:</label>
+                        <select name="Barber/stylist" id="team-member" required>
+                            <option value="Default"></option>
+                            <option value="Reese White">Reese White</option>
+                            <option value="Jillian Doe">Jillian Doe</option>
+                            <option value="Jullian Frazer">Jullian Frazer</option>
+                            <option value="Mike Williams">Mike Williams</option>
+                            <option value="Milly Smith">Milly Smith</option>
+                            <option value="Miguel Castro">Miguel Castro<option>
+                        </select>
+                    <p class="date-form">Set up a Date and a Time to meet with your Barber/Stylist</p>
+                    <p>
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date" required>
+                    <label for="time">Time:</label>
+                    <input type="time" name="time" id="time" required>
+                    <input type="submit" value="Submit">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </body>
+
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                <h1>O'Barber Shop</h1>
+                <p>123 Main St, Dallas, Texas</p>
+                <p>(214)-357-9888</p>
+            </div>
+            <p>Created by: Oscar Rubio</p>
+        </div>
+        
+    </footer>
+
+</html>

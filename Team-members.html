@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+        <meta charset="uft-8">
+    
+        <title>Teams</title>
+    
+        <link rel="StyleSheet" href="StyleSheet.css" >
+</head>
+<body>
+
+    <section>
+        <nav class="navbar">
+            <figure class="logo">
+                <img src="images/Logo.png" alt="Barber Shop Logo" >
+            </figure>
+            <figure class="logo1">
+                <img src="images/barbershop-name.jpg" alt="Baber Shop Name">
+            </figure >
+            <ul class="nav-links">
+                <li class="nav-item"><a href="Barber Shop.html">Home</a></li>
+                <li class="nav-item"><a href="Team-members.html">Team</a></li>
+                <li class="nav-item"><a href="Services.html">Services</a></li>
+            </ul>
+        </nav>
+
+        <ul class="infobar">
+            <li class="info-item">Location: 123 Main St, Dallas, Texas</li>
+            <li class="info-item">Phone: (214)-357-9888</li>
+            <li class="info-item">Email:BarberShop118@gmail.com</li>
+            <li class="info-item">Availablity:
+                <select name="drop1">
+                    <optgroup label="Available Days from 9am-5pm">
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                    </optgroup>"
+                    <optgroup label="Available Days from 11am-4pm">
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                </select>
+            </li>
+        </ul>
+    </section>
+
+    <section class="Team">
+        
+        <div class="Grid-Container">
+            <h1 class="grid-BackgroundColor a1">Our Team-members</h1>
+            <h1 class="grid-BackgroundColor a2">HairCuts</h1>
+            <div class="grid-BackgroundColor b1">
+                <figure>
+                    <img src="images/TM1.jpg" alt="Barber1">
+                    <figcaption>Reese White</figcaption>
+                    <figcaption>stylist</figcaption>
+                    <figcaption>8 years of Experience</figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-BackgroundColor b2">
+                <figure>
+                    <img src="images/TM2.jpg" alt="Barber1">
+                    <figcaption>Jillian Doe</figcaption>
+                    <figcaption>stylist</figcaption>
+                    <figcaption>4 years of Experience</figcaption>
+                </figure>
+            </div>
+            <div class="grid-BackgroundColor b3">
+                <figure>
+                    <img src="images/TM3.jpg" alt="Barber1">
+                    <figcaption>Jullian Frazer</figcaption>
+                    <figcaption>stylist and Barber</figcaption>
+                    <figcaption>5 years of Experience</figcaption>
+                </figure>
+            </div>
+            <div class="grid-BackgroundColor b4">
+
+                <div id="main" class="slideshow-container">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 5</div>
+                            <img src="images/Haircut-1.jpg" style="width:100%">
+                        <div class="text">Mens Hairstyles</div>
+                    </div>
+            
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 5</div>
+                            <img src="images/Haircut-2.jpg" style="width:100%">
+                        <div class="text">Womens Hairstyle</div>
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 5</div>
+                            <img src="images/Haircut-3.jpg" style="width:100%">
+                        <div class="text">Curly-hair hairstyles</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 5</div>
+                            <img src="images/Haircut-4.jpg" style="width:100%">
+                        <div class="text">Curly-hair hairstyles</div>
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 5</div>
+                            <img src="images/Haircut-4.jpg" style="width:100%">
+                        <div class="text">Curly-hair hairstyles</div>
+                    </div>
+                </div>
+            
+                    <br>
+                
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+
+                </div>
+                
+            </div>
+            <div class="grid-BackgroundColor c1">
+                <figure>
+                    <img src="images/TM4.jpg" alt="Barber1">
+                    <figcaption>Mike Williams</figcaption>
+                    <figcaption>Barber</figcaption>
+                    <figcaption>10 years of Experience</figcaption>
+                </figure>
+            </div>
+            <div class="grid-BackgroundColor c2">
+                <figure>
+                    <img src="images/TM5.jpg" alt="Barber1">
+                    <figcaption>Milly Smith</figcaption>
+                    <figcaption>Barber and stylist</figcaption>
+                    <figcaption>1 years of Experience</figcaption>
+                </figure>
+            </div>
+            <div class="grid-BackgroundColor c3">
+                <figure>
+                    <img src="images/TM6.jpg" alt="Barber1">
+                    <figcaption>Miguel Castro</figcaption>
+                    <figcaption>Barber</figcaption>
+                    <figcaption>7 years of Experience</figcaption>
+                </figure>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+        let i;
+        let slides = document.querySelectorAll("div#main>div");
+        let dots = document.querySelectorAll("div span");
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].classList.add("active");
+        setTimeout(showSlides, 5000); // Change image every 3 seconds
+        }
+        </script>
+
+
+</body>
+
+<footer>
+    <div class="footer">
+        <div class="footer1">
+            <h1>O'Barber Shop</h1>
+            <p>123 Main St, Dallas, Texas</p>
+            <p>(214)-357-9888</p>
+        </div>
+        <p>Created by: Oscar Rubio</p>
+    </div>
+    
+</footer>
+
+
+
+
+
+</html>
